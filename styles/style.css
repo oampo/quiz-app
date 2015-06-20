@@ -69,9 +69,9 @@ input[type="range"]::-webkit-slider-thumb:hover{
  }
 body {
 	font-family: Cabin Condensed;
-	font-size: 2em;
-	background-image: url('/Users/LizPar/Documents/Projects/quizapp/styles/getoutside.jpg');
+	font-size: 2em;/
     background-color: #00D1C4;
+    background-image: url('getoutside.jpeg');
     /*#46C3FF;*/
     color: #ffffff;
     text-align: center;
@@ -116,7 +116,7 @@ ul {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);*/
   text-decoration: none;
-  transform: rotate(180deg);
+  transform: rotate(10deg);
 }
 .question1 {
     margin: auto;

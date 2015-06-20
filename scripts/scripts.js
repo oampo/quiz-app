@@ -2,11 +2,8 @@
 $(document).ready(function(){
 
 
-  $('.startButton').on('mouseover', function(event) {
+  $('.startButton').on('mouseenter', function(event) {
     event.preventDefault();
-    alert('hello');
-  	// document.getElementById('.question1').style.display = '';
+    console.log('test');
   });
-
-
 });
