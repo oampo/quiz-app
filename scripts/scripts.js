@@ -6,7 +6,7 @@ $(document).ready(function(){
     event.preventDefault();
     console.log('test');
     $('body').css("background-color","#00D1C4");
-    $('body').css("background-image","none");
+    $('body').addClass("background-image","none");
     $(this).remove();
     $('.question1').show();
 

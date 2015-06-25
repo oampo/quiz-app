@@ -138,3 +138,9 @@ li::before {
   cursor: pointer;
 }
 
+.transition {
+  
+transition: background-color .3s linear;
+
+}
+
