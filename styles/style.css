@@ -68,7 +68,7 @@ input[type="range"]::-webkit-slider-thumb:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d2e38', endColorstr='#2b4254',GradientType=1 );
  }
 body {
-	font-family: Cabin Condensed;
+	font-family: avenir;
 	font-size: 2em;/
     background-color: #00D1C4;
     background-image: url('getoutside.jpeg');
@@ -118,8 +118,23 @@ ul {
   text-decoration: none;
   transform: rotate(10deg);
 }
-.question1 {
+.question {
     margin: auto;
     display: none;
+    counter-reset: my-badass-counter;
+}
+
+li {
+  display: block;
+}
+
+li::before {
+  content: "(" counter(my-badass-counter, lower-latin) ") ";
+  counter-increment: my-badass-counter;
+
+}
+
+.answer1:hover {
+  cursor: pointer;
 }
 

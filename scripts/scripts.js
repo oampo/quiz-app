@@ -2,8 +2,18 @@
 $(document).ready(function(){
 
 
-  $('.startButton').on('mouseenter', function(event) {
+  $('.startButton').on('click', function(event) {
     event.preventDefault();
     console.log('test');
-  });
+    $('body').css("background-color","#00D1C4");
+    $('body').css("background-image","none");
+    $(this).remove();
+    $('.question1').show();
+
+   $('.answer1').on('click', function(event) {
+   	$('.question2').show();
+   	$('.question1').remove();
+   });
+
+   });
 });
