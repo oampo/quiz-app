@@ -128,12 +128,12 @@ li {
   display: block;
 }
 
-li::before {
+/*li::before {
   content: "(" counter(my-badass-counter, lower-latin) ") ";
   counter-increment: my-badass-counter;
 
 }
-
+*/
 .answer1:hover {
   cursor: pointer;
 }
@@ -143,4 +143,6 @@ li::before {
 transition: background-color .3s linear;
 
 }
+
+
 
