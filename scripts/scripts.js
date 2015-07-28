@@ -20,10 +20,15 @@ $(document).ready(function(){
     $('body').css("background-color","#00D1C4");
     $('body').css("background-image","none");
     $(this).remove();
-    console.log('question0.question');
-    $('.questionsHere').append('<li><span>' + question0 + '</span></li>');
+    console.log(question0.question);
+    $('.questionsHere').append('<li><span>' + question0.question + '</span></li>');
+    $('.questionsHere').append('<li><span>' + question0.choices[0] + '</span></li>');
+    $('.questionsHere').append('<li><span>' + question0.choices[1] + '</span></li>');
+    $('.questionsHere').append('<li><span>' + question0.choices[2] + '</span></li>');
    });
     
+//upon click of answer, go to next question & store answer
+
     //store users answer point values
     //add answer point values
     //if (uservalues > 20){
