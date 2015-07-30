@@ -144,5 +144,10 @@ transition: background-color .3s linear;
 
 }
 
+.changeBackground {
+  background-color: #00D1C4;
+  background-image: none;
+}
+
 
 
