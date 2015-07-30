@@ -54,20 +54,28 @@ else {
 
     //store users answer point values
     //add answer point values
-    //if (uservalues > 20){
-        // 'You should go Columbia.'
-    // }
-    // else if (uservalues > 14 && uservalues <20){
-        //'You should go to Lake Baikal, Russia.'
-    //}
-    // else if (uservalues >10 && uservalues < 14){
-    //     'You should go to Glacier National Park.'
-    //}
-    //else if (uservalues 5> && uservalues < 10 {
-    //     'You should go to Goa India.'
-    //else {
-    //     'You should go to Brazil.'
-    // }
-    //}
+    //this can all be a function name of country is a variable.. 
+    switch(uservalues){
+        case (uservalues > 20) :
+            $('.questionsHere').append('<li><span>You should go to ' results '</span></li>');
+            $('.body').addClass("colombia");
+            break;
+        case (uservalues > 14 && uservalues <21) :
+            $('.questionsHere').append('<li><span>You should go to Lake Baikal, Russia.</span></li>');
+            $('.body').addClass("baikal");
+            break;
+        case (uservalues > 10 && uservalues < 14) :
+            $('.questionsHere').append('<li><span>You should go to Glacier National Park.</span></li>');
+            $('.body').addClass("baikal");
+            break;
+        case (uservalues 5 > && uservalues < 11) :
+            $('.questionsHere').append('<li><span>You should go to Glacier National Park.</span></li>');
+            $('.body').addClass("gnpark");
+            break;
+        default :
+            $('.questionsHere').append('<li><span>You should go to Goa India.</span></li>');
+            $('.body').addClass("india");
+            
+    }
 
 });
