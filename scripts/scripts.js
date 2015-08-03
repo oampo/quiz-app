@@ -34,20 +34,22 @@ $(document).ready(function(){
 
 //on click of answer, if question number is less than total number of questions, removes old question set and replaces with next question set
 
-    on click {
-    if (currentquestion < 5) {
-        this.remove // removes the question
-        displayQuestion(currentQuestion); // displays the new question
-        answerQuestion(); //advances to new question
-        //store answer value
+    $(questions[index].choice).on('click', function(event) {
+        event.preventDefault();
+        if (currentquestion < questions.length) {
+            $(this).remove(); // removes the question
+            answerQuestion(); //advances to new question
+            displayQuestion(currentQuestion); // displays the new question
+            //store answer value
     }
-    else {
-        Display calculating...
-        if {
+    else if {
+        ('.questionsHere').append('<li><span>Calculating...</span></li>');
         
-        }
+    else {
+        
+    }
         //total results
-        display results
+        ('.questionsHere').append('<li><span>You got'+ ?? + '</span></li>');
     }
 
     //store users answer point values
@@ -58,38 +60,39 @@ $(document).ready(function(){
 
     //add answer point values
     var score = 0;
-    if answerA {
-        var score = score + 1
+    if (answerA) {
+        var score = score + 1;
     }
-    if answerB {
-        var score = score + 2
+    if (answerB) {
+        var score = score + 2;
     }
-    if answerC {
-        var score = score + 3
+    if (answerC) {
+        var score = score + 3;
     };
 
     //this can all be a function name of country is a variable.. 
-    switch(score){
-        case (score > 20) :
-            $('.questionsHere').append('<li><span>You should go to ' results '</span></li>');
-            $('.body').addClass("colombia");
-            break;
-        case (uservalues > 14 && uservalues <21) :
-            $('.questionsHere').append('<li><span>You should go to Lake Baikal, Russia.</span></li>');
-            $('.body').addClass("baikal");
-            break;
-        case (uservalues > 10 && uservalues < 14) :
-            $('.questionsHere').append('<li><span>You should go to Glacier National Park.</span></li>');
-            $('.body').addClass("baikal");
-            break;
-        case (uservalues 5 > && uservalues < 11) :
-            $('.questionsHere').append('<li><span>You should go to Glacier National Park.</span></li>');
-            $('.body').addClass("gnpark");
-            break;
-        default :
-            $('.questionsHere').append('<li><span>You should go to Goa India.</span></li>');
-            $('.body').addClass("india");
-            
+
+    // low, medium, high classify scores, to use the relationship
+    if (score > 20) {
+        $('.questionsHere').append('<li><span>You should go to ' + results + '</span></li>');
+        $('.body').addClass("colombia");
+    }
+    else if (uservalues > 14 && uservalues <21) {
+        $('.questionsHere').append('<li><span>You should go to Lake Baikal, Russia.</span></li>');
+        $('.body').addClass("baikal");
+    }
+    else if (uservalues > 10 && uservalues < 14) {
+        $('.questionsHere').append('<li><span>You should go to Glacier National Park.</span></li>');
+        $('.body').addClass("baikal");
+    }
+    else if (uservalues 5 > && uservalues < 11) {
+        $('.questionsHere').append('<li><span>You should go to Glacier National Park.</span></li>');
+        $('.body').addClass("gnpark");
+    }
+    else {
+        $('.questionsHere').append('<li><span>You should go to Goa India.</span></li>');
+        $('.body').addClass("india");
+
     }
 
 });
