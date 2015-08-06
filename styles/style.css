@@ -76,16 +76,14 @@ body {
     color: #ffffff;
     text-align: center;
 }
-h1{
+h1 {
 	margin: auto 10;
 }
-li {
 
-}
 ul {
 	margin: auto;
 	/*text-align: left;*/
-	list-style-type: none;
+	list-style-type: lower-alpha;
 	width: 50%;
 }
 
@@ -129,11 +127,12 @@ li {
 }
 
 /*li::before {
+  counter-reset: section;
   content: "(" counter(my-badass-counter, lower-latin) ") ";
-  counter-increment: my-badass-counter;
+  counter-increment: my-badass-counter;*/
 
 }
-*/
+
 .answer1:hover {
   cursor: pointer;
 }
@@ -147,6 +146,18 @@ transition: background-color .3s linear;
 .changeBackground {
   background-color: #00D1C4;
   background-image: none;
+}
+
+.baikal {
+
+}
+
+li {
+  list-style-type: lower-alpha;
+}
+
+.answersHere:hover {
+  cursor: pointer;
 }
 
 
