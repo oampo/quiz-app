@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Quiz App</title>
+<meta charset="UTF-8">
+<title>Quiz App</title>
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/scripts.js"></script>
-</head>
-<body>
-<h1 class="intro"1>
-Where should I go on vacation this summer? Take the quiz and find out.
-</h1>
-<button type="button" class= 'startButton'>Start</button>
-<div class="questionNum">
-</div>
-<div class="questionsHere">
-</div>
-<ul class= "answersHere">
-<!-- <li></li> -->
-</ul>
-<section class='question question3'>
-<input type="range" min="0" max="50" value="20" step="1" /><br>
-</section><br>
-<section class='question question4'>
-<input type="range" min="0" max="50" value="50" step="1" /> <br>
-</section><br>
+<script type="text/javascript" src="scripts/scripts.js"></script>
 
-	
-</body>
-</html>
+<h1 class="intro">
+    Where should I go on vacation this summer? Take the quiz and find out.
+</h1>
+
+<div class="landing-page-view" style="display: none">
+    <button type="button" class= 'startButton'>Start</button>
+</div>
+
+<div class="question-view" style="display: none">
+    <div>
+        Question #<span class="questionNum"></span>
+    </div>
+
+    <div class="question">
+    </div>
+
+    <ul class= "answers">
+    </ul>
+</div>
+
+<div class="result-view" style="display: none">
+    <div>
+        You should visit <span class="result"></span>
+    </div>
+</div>
+
+

@@ -118,7 +118,6 @@ ul {
 }
 .question {
     margin: auto;
-    display: none;
     counter-reset: my-badass-counter;
 }
 
