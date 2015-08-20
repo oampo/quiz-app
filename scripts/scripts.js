@@ -4,8 +4,6 @@ $(document).ready(function(){
     function QuizGame(question, choices, qNum) {
     this.question= question;
     this.choices= choices;
-    
-    // this.qNum= qNum; Joe-- is this a useless bit of data now?
     }
      
     var questions= [
